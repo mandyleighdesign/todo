@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@font-face { 
+    font-family: "Roboto";
+    src: url("src/assets/fonts/roboto/200/Roboto-Light.ttf") 
+}
+
+
+input {
+    width: 100%;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 5px rgba(0,0,0,0.1);
+    margin: 10px 0;
+    padding: 7px;
+    color: rgb(69, 69, 69);
+    font-size: 14px;
+}
+
+input:focus {
+    box-shadow: inset 0 0px 5px rgba(0,0,0,.15);
+    background-color: rgba(0,0,0,0.03);
+    border: 1px solid #00B1FF;
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    color: #6c6b6b;
+
+}
+
+.title {
+    color: #ff3399;
+    line-height: 5px;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.form {
+    margin: auto;
+    width: 30%;
+    background-color: #fff;
+    padding: 20px 40px 20px 20px;
+    border-radius: 7px;
+    font-size: 16px;
+    color: #6c6b6b;
+    position: relative;
+}
+
+.btn {
+    width: 104%;
+    background-image: linear-gradient(-90deg, #ff6666, #ff3399);
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-image: none;
+    background-color: white;
+    color: #ff3399;
+    border: 1px solid #ff3399;
+}
+
+
+
+@media (max-width: 600px) {
+    .form {
+        width: 80%;
+        margin: auto;
+    }
+
+    .container {
+        margin: 20px;
+    }
+
+    #del {
+        position: absolute;
+        left: 250px;
+        font-size: 20px
+    }
+  }

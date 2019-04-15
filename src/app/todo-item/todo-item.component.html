@@ -1,0 +1,4 @@
+
+  <li [ngClass]="setClasses()" class="item[todo]" >
+    <button *ngIf="!todo.completed" (click)="onToggle(todo)" class="complete">Complete</button>{{todo.title}}&nbsp;<span (click)="removeTodo(todo.id)" id="del">x</span>
+  </li>

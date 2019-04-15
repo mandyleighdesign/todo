@@ -1,0 +1,51 @@
+.complete {
+    border: 1px solid #ff3399;
+    border-radius: 5px;
+    padding: 5px;
+    color: #ff3399;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.complete:hover {
+    background-color: #ff3399;
+    margin-right: 8px;
+    color: white;
+}
+
+li {
+    padding: 5px;
+    position: relative;
+}
+
+#del {
+    position: absolute;
+    left: 371px;
+    font-size: 20px
+}
+
+#del:hover {
+   color: #ff3399;
+   cursor: pointer;
+}
+
+.todo {
+}
+
+.is-complete {
+    text-decoration: line-through;
+
+}
+
+
+.is-complete2 {
+    display: none; 
+}
+
+@media (max-width: 600px) {
+
+    #del {
+        position: absolute;
+        left: 220px;
+        font-size: 20px
+    }
+  }

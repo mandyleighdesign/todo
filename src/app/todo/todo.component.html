@@ -1,0 +1,19 @@
+<form class="form">
+  <div class="container">
+    <p class="title">
+      {{ title }}
+    </p>
+    <p>A place to store things you have to do.</p>
+
+    <input (input)="filterTodos(keyword)" [(ngModel)]="keyword" name="keyword" type="text" placeholder="Filter your todos" class="filter"/>
+
+    <ol>
+      <app-todo-item (deleteClicked)="onDeleteClicked($event)" [todo]="todo" *ngFor ="let todo of todos"></app-todo-item>
+    </ol> 
+     
+    <input name="newTodo" type="text" placeholder="Add to your todo" class="add" [(ngModel)]="newTodo"/>
+
+    <button class="btn" (click)="addItem(newTodo)">Add</button>
+  </div>
+</form>
+
